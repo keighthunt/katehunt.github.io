@@ -1,0 +1,78 @@
+#contact {
+	background: #4abdac;
+
+	h2,p {
+		color: #fff
+	}
+
+	p {
+		font-size: 20px;
+	}
+	a:hover {
+		color: #E2F4F3;
+	}
+
+	.contact-content {
+		margin: 40px 0;
+		div {
+			padding: 0;
+		}
+	}
+	input {
+	    border: none;
+	    background: transparent;
+	    border-bottom: 2px solid #2b766b;
+		margin-bottom: 20px;
+		width: 100%;
+		line-height: 40px;
+		font-size: 20px;
+		border-radius: 0.25em;
+		padding: 5px 10px;
+		&:focus {
+			outline: none;
+		}
+	}
+
+	#submit {
+		color: #fff;
+		width: 100px;
+		border: none;
+		background: #2b766b;
+		float: right;
+		&:hover {
+			background: #e4f4f3;
+			color: #2b766b;
+		}
+	}
+
+
+
+	#linkedin {
+		width: 42px;
+		height: 42px;
+		float: right;
+		position: relative;
+		&:hover {
+			&:before {
+				color: #e4f4f3;
+			}
+		}
+		&:before {
+			content: "\e902";
+			font-family: 'iconfont';
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-size:42px;
+			line-height: 42px;
+
+			&:hover {
+				color: #E2F4F3;
+			}
+		}
+	}
+
+	::-webkit-input-placeholder {
+	  color: #2b766b;
+	}
+}

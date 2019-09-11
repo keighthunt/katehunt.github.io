@@ -1,0 +1,39 @@
+#about {
+	.about-skills {
+		h3 {
+			line-height: 40px;
+			padding-left: 55px;
+			position: relative;
+			&:before {
+				color: #2b766b;
+				font-family: 'iconfont';
+				font-size: 40px;
+				line-height: 40px;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+		#development {
+			&:before {
+				content: "\e904";
+			}
+		}
+		#design {
+			&:before {
+				content: "\e903";
+			}
+		}
+		.skills {
+			padding: 0 0 0 55px;
+		}
+		.dev-skills {
+			padding: 0;
+		}
+
+		ul {
+			margin-top: 10px;
+			margin-bottom: 30px;
+		}
+	}
+}

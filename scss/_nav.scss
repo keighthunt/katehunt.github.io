@@ -1,0 +1,18 @@
+.navbar-default {
+	background: #fff;
+	.navbar-brand {
+		color: #4abdac;
+	}
+	.navbar-toggle:focus,
+	.navbar-toggle:hover {
+		background-color: #4abdac;
+
+		.icon-bar {
+			background-color: #fff;
+		}
+	}
+	.container {
+		padding-bottom: 0;
+		padding-top: 0;
+	}
+}

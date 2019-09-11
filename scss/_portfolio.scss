@@ -1,0 +1,138 @@
+#portfolio {
+	background: #4abdac;
+	h2 {
+		color: #fff;
+	}
+	*, *:before, *:after {
+		box-sizing:  border-box !important;
+	}
+	.row {
+		-moz-column-width: 21em;
+		-webkit-column-width: 21em;
+		-moz-column-gap: 1em;
+		-webkit-column-gap:1em; 
+	}
+	.item {
+		opacity: 1;
+		visibility: visible;
+		display: inline-block;
+		padding: .25rem;
+		width: 100%; 
+		@media only screen and (min-width: 768px) {
+			visibility: hidden;
+		}
+	}
+	.well {
+		position:relative;
+		display: block;
+		padding: 0;
+		border: 1px solid #4abdac;
+	}
+}
+
+.item {
+  margin: 0 0 15px;
+  right: 0;
+  .portfolio-link {
+	  display: block;
+	  position: relative;
+	  max-width: 400px;
+	  margin: 0 auto;
+	  .caption {
+		  background: rgba(43,118,107, 0.9);
+		  position: absolute;
+		  width: 100%;
+		  height: 100%;
+		  opacity: 0;
+		  transition: all ease 0.5s;
+		  -webkit-transition: all ease 0.5s;
+		  -moz-transition: all ease 0.5s;
+		  &:hover {
+			  opacity: 1;
+			}
+			.caption-content {
+			  position: absolute;
+			  width: 100%;
+			  height: 20px;
+			  font-size: 20px;
+			  text-align: center;
+			  top: 50%;
+			  margin-top: -12px;
+			  color: white;
+			}
+		}
+	}
+}
+.portfolio-modal .modal-content {
+  border-radius: 0;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  min-height: 100%;
+  padding: 0;
+  text-align: center;
+  @media only screen and (min-width: 768px) {
+  	padding: 100px 0;
+  }
+  h2 {
+  	margin-top: 0;
+    border-bottom: 1px solid #E2F4F3;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .portfolio-tech {
+  	text-align: left;
+  }
+  ul {
+  	margin-top: 0;
+  }
+	.item-details {
+	  margin: 30px 0;
+	}
+	.close-modal {
+	  position: absolute;
+	  width: 50px;
+	  height: 50px;
+	  background-color: transparent;
+	  top: 10px;
+	  right: 10px;
+	  cursor: pointer;
+	  z-index: 100000;
+	  @media only screen and (min-width: 768px) {
+	  	width: 35px;
+	  	height: 35px;
+	  	top: 25px;
+	  	right: 25px;
+	  }
+	  &:before {
+	  	content: "\e901";
+	  	color: #2b766b;
+	  	font-family: 'iconfont';
+	  	top: 10px;
+    	left: 15px;
+	  	font-size: 20px;
+	  	line-height: 20px;
+	  	position: absolute;
+	  	@media only screen and (min-width: 768px) {
+	  		font-size: 35px;
+	  		line-height: 35px;
+	  		top:0;
+	  		left: 0;
+	  	}
+	  }
+	  &:hover {
+		  &:before {
+		  	color: #E2F4F3;
+		  }
+		}
+		span {
+	    text-indent: -999999px;
+	    display: block;
+		}
+	}
+	.modal-backdrop {
+	  opacity: 0;
+	  display: none;
+	}
+}
